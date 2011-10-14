@@ -37,7 +37,7 @@ If benchmarking, disable debug mode: edit `app/Config/core.php` and change `Conf
 
 	id: 1
 	name: Eleifend Vivamus
-	email: proin@example.com
+	email: proin@mollis.com
 	password: db6ff2ffe2df7b8cfc0d9542bdce27dc
 	phone: 4624-8435
 	mobile_phone: 2078-8235
@@ -50,14 +50,14 @@ If benchmarking, disable debug mode: edit `app/Config/core.php` and change `Conf
 
 	id: 2
 	name: Risus Proin
-	email: fringilla@example.com
+	email: fringilla@congue.com
 	password: c3d32ae7ad6a5d450756a7d96b2a2a21
 	phone: 4624-8435
 	mobile_phone: 2078-8235
 	address: Sit orci amet
 	city: Morbi
 	postcode: 8561
-	web: http:/www.fermentum.com
+	web: http:/www.consectetur.com
 	created: 011-08-15 23:30:16
 	modified: 2011-09-05 09:31:26
 
