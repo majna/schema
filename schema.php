@@ -1,6 +1,6 @@
 <?php
 /*
- * App schema for "Sample blog application"
+ * CakePHP database schema for multi blog application with random data generator.
  */
 class AppSchema extends CakeSchema {
 
@@ -100,7 +100,7 @@ class AppSchema extends CakeSchema {
 	);
 
 	/**
-	 *  Populate tables with lorem ispum text
+	 *  Generate some randomized data matching field format
 	 */
 	public function __destruct() {
 		$config = array(
