@@ -36,17 +36,17 @@ If benchmarking, disable debug mode: edit `app/Config/core.php` and change `Conf
 ## Example of few  records created in table 'users':
 
 	id: 1
-	name:		Eleifend Vivamus
-	email:		proin@example.com
-	password:		db6ff2ffe2df7b8cfc0d9542bdce27dc
-	phone:		4624-8435
-	mobile_phone:	2078-8235
-	address:		Sit orci amet
-	city:			Sociis
-	postcode:		8561
-	web:			http:/www.fermentum.com
-	created:		2011-05-15 22:01:01
-	modified:		2011-07-13 20:31:06
+	name:			Eleifend Vivamus
+	email:			proin@example.com
+	password:			db6ff2ffe2df7b8cfc0d9542bdce27dc
+	phone:			4624-8435
+	mobile_phone:		2078-8235
+	address:			Sit orci amet
+	city:				Sociis
+	postcode:			8561
+	web:				http:/www.fermentum.com
+	created:			2011-05-15 22:01:01
+	modified:			2011-07-13 20:31:06
 
 	id: 2
 	name:		Risus Proin
