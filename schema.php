@@ -100,7 +100,9 @@ class AppSchema extends CakeSchema {
 	);
 
 	/**
-	 *  Generate some randomized data matching field format
+	 * Generate some randomized data matching field format
+	 * 
+	 * Schema callbacks (before and after) are fired foreach table, so we are using destructor here.
 	 */
 	public function __destruct() {
 		$config = array(
@@ -213,8 +215,9 @@ class AppSchema extends CakeSchema {
 
 	/**
 	 * Lorem Ipsum words generator
-	 * @param integer $numWords
-	 * @return string "Lorem ipsum" words 
+	 * 
+	 * @param integer $numWords Numer of words to generate
+	 * @return string "Lorem ipsum" words with first letter upper cased.
 	 */
 	protected function lorem($numWords = 1) {
 		$words = "Lorem ipsum dolor sit amet consectetur adipiscing elit Vestibulum blandit interdum dignissim "
