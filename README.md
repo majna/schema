@@ -63,7 +63,7 @@ If benchmarking, disable debug mode: edit `app/Config/core.php` and change `Conf
 
 ## Example of created records in table 'posts':
 
-It will assign few tags to each Post and pick a random category and blog.
+It will assign few tags and comments to each Post and pick a random category and blog.
 
 	id: 1
 	category_id: 48
