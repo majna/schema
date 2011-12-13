@@ -2,6 +2,8 @@
 
 Useful when learning CakePHP, for benchmarks, tests, debugging and more.
 
+Demo of baked app is available on fluffy cloud: http://majna.phpfogapp.com
+
 All you need is to copy schema.php to APP/Config/Schema and run cake console task.
 
 Following tables (and number of inserted rows) will be created (can be configured in schema file):
@@ -25,7 +27,7 @@ It tries to match data values for name, date, email address, title, post etc.
 4. Copy provided schema.php to "APP/Config/Schema" folder.
 5. Configure and run CakePHP console: 
 
-    `cake schema create app` (wait for a minute until all records are inserted)
+    `cake schema create App` (wait for a minute until all records are inserted)
 
     `cake bake all` (repeat for all available models).
 
