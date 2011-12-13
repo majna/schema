@@ -2,9 +2,7 @@
 
 Useful when learning CakePHP, for benchmarks, tests, debugging and more.
 
-Demo of baked app is available on fluffy cloud: http://majna.phpfogapp.com
-
-All you need is to copy schema.php to APP/Config/Schema and run cake console task.
+Demo of baked app is available on http://majna.phpfogapp.com
 
 Following tables (and number of inserted rows) will be created (can be configured in schema file):
 
@@ -16,8 +14,6 @@ Following tables (and number of inserted rows) will be created (can be configure
 	posts_tags : 2000,
 	tags : 1000, 
 	users : 1000
-
-It tries to match data values for name, date, email address, title, post etc.
 
 ## Usage
 
@@ -103,4 +99,4 @@ It will assign few tags and comments to each Post and pick a random category and
 ### Requirements
 
     PHP version: PHP 5.2+
-    CakePHP version: 1.3, 2.x
+    CakePHP version: 2.0
