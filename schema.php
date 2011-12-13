@@ -202,7 +202,7 @@ class AppSchema extends CakeSchema {
 	protected function users() {
 		return array(
 			'name' => ucfirst($this->lorem(1)) . ' ' . ucfirst($this->lorem(1)),
-			'email' => lcfirst($this->lorem(1)) . '@' . lcfirst($this->lorem(1)) . 'com',
+			'email' => lcfirst($this->lorem(1)) . '@' . lcfirst($this->lorem(1)) . '.com',
 			'password' => md5($this->lorem(1)),
 			'address' => $this->lorem(3),
 			'city' => $this->lorem(1),
@@ -247,5 +247,7 @@ class AppSchema extends CakeSchema {
 		}
 		
 		return ucfirst($out);
+
 	}
+
 }
