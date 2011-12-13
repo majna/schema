@@ -2,6 +2,7 @@
 /*
  * CakePHP database schema for multi blog application with random data generator.
  */
+App::uses('ClassRegistry', 'Utility');
 class AppSchema extends CakeSchema {
 
 	public $blogs = array(
@@ -137,7 +138,7 @@ class AppSchema extends CakeSchema {
 			'user_id' => rand(1, $config['users']),
 			'title' => $this->lorem(3),
 			'description' => $this->lorem(rand(15, 30)) . '.',
-			'notes' => $this->lorem(rand(2, 8))
+			'notes' => $this->lorem(rand(2, 8)) . '.',
 		);
 	}
 
@@ -171,7 +172,7 @@ class AppSchema extends CakeSchema {
 			'category_id' => rand(1, $config['categories']),
 			'title' => $this->lorem(rand(4, 9)),
 			'description' => $this->lorem(rand(9, 22)) . '.',
-			'body' => $this->lorem(rand(200, 800)),
+			'body' => $this->lorem(rand(200, 800)) . '.',
 			'published' => 1,
 			'featured' => rand(1, 0),
 		);
@@ -230,19 +231,21 @@ class AppSchema extends CakeSchema {
 			. "et magnis dis parturient montes nascetur ridiculus mus Donec mollis orci euismod blandit "
 			. "tincidunt vitae consectetur Maecenas sagittis placerat sodales ullamcorper  mperdiet ligula ";
 
-		$list = shuffle(explode(' ', $words));
+		$list = explode(' ', $words);
+		shuffle($list);
 		$out = array();
-		
-		for ($i = 1; $i <= $numWords; $i++) {
+		for ($i = 0; $i <= $numWords; $i++) {
 			if (isset($list[$i])) {
 				$out[] = $list[$i];
 			}
 		}
 
 		if ($numWords === 1) {
-			$out = trim($out);
+			$out = trim($out[0]);
+		} else {
+			$out = implode(' ', $out);
 		}
-		return ucfirst(implode(' ', $out)) . '.';
+		
+		return ucfirst($out);
 	}
-
 }

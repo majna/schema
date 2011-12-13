@@ -25,8 +25,9 @@ It tries to match data values for name, date, email address, title, post etc.
 4. Copy provided schema.php to "APP/Config/Schema" folder.
 5. Configure and run CakePHP console: 
 
-    `cake schema create app` Wait for a minute until all records are inserted.
-    `cake bake all` Repeat for all available models.
+    `cake schema create app` (wait for a minute until all records are inserted)
+
+    `cake bake all` (repeat for all available models).
 
 All done, now browse to "/posts".
 
