@@ -19,7 +19,7 @@ It tries to match data values for name, date, email address, title, post etc.
 
 ## Usage
 
-1. Install fresh copy of CakePHP (1.3.x or 2.x)
+1. Install fresh copy of CakePHP (2.x)
 2. Configure database in "APP/Config/database.php".
 3. Browse to home page and confirm Cake setup checks.
 4. Copy provided schema.php to "APP/Config/Schema" folder.
