@@ -29,9 +29,6 @@ Following tables (and number of inserted rows) will be created (can be configure
 
 All done, now browse to "/posts".
 
-If benchmarking, disable debug mode: edit `app/Config/core.php` and change `Configure::write('debug', 0);`
-
-
 ## Example of created records in table 'users':
 
 	id: 1
