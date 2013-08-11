@@ -234,7 +234,7 @@ class AppSchema extends CakeSchema {
 		$list = explode(' ', $words);
 		shuffle($list);
 		$out = array();
-		for ($i = 0; $i <= $numWords; $i++) {
+		for ($i = 0; $i < $numWords; $i++) {
 			if (isset($list[$i])) {
 				$out[] = $list[$i];
 			}
