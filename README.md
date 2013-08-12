@@ -2,7 +2,7 @@
 
 Useful when learning CakePHP, for benchmarks, tests, debugging and more.
 
-Demo of baked app is available on http://majna.phpfogapp.com
+Demo of baked app is available on http://schema.aws.af.cm/posts
 
 Following tables (and number of inserted rows) will be created (can be configured in schema file):
 
